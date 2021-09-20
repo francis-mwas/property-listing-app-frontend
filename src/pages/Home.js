@@ -1,10 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Banner from '../components/Banner';
+import BannerHero from '../components/BannerHero';
 
 function Home() {
   return (
-    <div className="home">
-      <h2>Hello from the homepage</h2>
-    </div>
+    <Banner>
+      <BannerHero
+        title="Get affordable luxurious homes"
+        paragraph="The ultimate modern lifestyle"
+      >
+        <Link to="/properties" className="banner__btn">
+          View homes
+        </Link>
+      </BannerHero>
+    </Banner>
   );
 }
 
