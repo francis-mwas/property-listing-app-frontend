@@ -1,18 +1,20 @@
-@import "base";
-@import "typography";
+@import 'base';
+@import 'typography';
 
+// Homepage
+@import 'header';
+@import 'banner';
+@import 'services';
+@import 'apartments';
+@import 'testimonials';
+@import 'gallery';
+@import 'footer';
 
-// Homepage 
-@import "header";
-@import "banner";
-@import "services";
-@import "apartments";
-@import "testimonials";
-@import "gallery";
-@import "footer";
+// properties page
+@import 'properties-section';
 
-// properties page 
-@import "properties-section";
+//loading
+@import 'loading';
 
 //Single property listing
-@import "details";
+@import 'details';

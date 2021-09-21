@@ -2,8 +2,11 @@ import { v4 as uuid } from 'uuid';
 import img1 from './images/apart-5.jpg';
 import img3 from './images/apart-7.jpg';
 import img2 from './images/apart-6.jpg';
+import img4 from './images/apart-8.jpg';
+import img5 from './images/apart-9.jpg';
+import img6 from './images/apart-10.jpg';
 
-export const data = [
+const data = [
   {
     sys: {
       id: '1',
@@ -17,6 +20,7 @@ export const data = [
       rooms: 5,
       beds: 4,
       bathRooms: 6,
+      featured: true,
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur.',
       otheAmenities: [
@@ -70,13 +74,14 @@ export const data = [
     },
     fields: {
       propertyTitle: 'Denis Gardens',
-      slug: 'apartment-for-sale',
+      slug: 'house-for-sale',
       location: 'Ngong Road',
       price: 100,
       size: 200,
       rooms: 5,
       beds: 4,
       bathRooms: 6,
+      featured: true,
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur.',
       otheAmenities: [
@@ -95,14 +100,14 @@ export const data = [
         {
           fields: {
             file: {
-              url: img1,
+              url: img2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: img2,
+              url: img1,
             },
           },
         },
@@ -129,13 +134,14 @@ export const data = [
     },
     fields: {
       propertyTitle: 'Silverstone Kilimani',
-      slug: 'apartment-for-sale',
+      slug: 'land-for-sale',
       location: 'Ngong Road',
       price: 100,
       size: 200,
       rooms: 5,
       beds: 4,
       bathRooms: 6,
+      featured: true,
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur.',
       otheAmenities: [
@@ -154,14 +160,14 @@ export const data = [
         {
           fields: {
             file: {
-              url: img1,
+              url: img3,
             },
           },
         },
         {
           fields: {
             file: {
-              url: img2,
+              url: img1,
             },
           },
         },
@@ -195,6 +201,7 @@ export const data = [
       rooms: 5,
       beds: 4,
       bathRooms: 6,
+      featured: true,
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur.',
       otheAmenities: [
@@ -213,7 +220,7 @@ export const data = [
         {
           fields: {
             file: {
-              url: img1,
+              url: img4,
             },
           },
         },
@@ -247,13 +254,14 @@ export const data = [
     },
     fields: {
       propertyTitle: 'MagicDash Apartments',
-      slug: 'apartment-for-sale',
+      slug: 'office-space-for-rent',
       location: 'Ngong Road',
       price: 100,
       size: 200,
       rooms: 5,
       beds: 4,
       bathRooms: 6,
+      featured: true,
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur.',
       otheAmenities: [
@@ -272,7 +280,7 @@ export const data = [
         {
           fields: {
             file: {
-              url: img1,
+              url: img5,
             },
           },
         },
@@ -313,6 +321,7 @@ export const data = [
       rooms: 5,
       beds: 4,
       bathRooms: 6,
+      featured: true,
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur.',
       otheAmenities: [
@@ -331,7 +340,7 @@ export const data = [
         {
           fields: {
             file: {
-              url: img1,
+              url: img6,
             },
           },
         },
@@ -393,3 +402,5 @@ export const serviceData = {
     },
   ],
 };
+
+export default data;
