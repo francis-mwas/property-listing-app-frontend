@@ -10,7 +10,7 @@ function Services() {
       <div className="service">
         {serviceData.services.map((service) => (
           <div className="service__content" key={service.id}>
-            <svg class="service__icon">
+            <svg className="service__icon">
               <use xlinkHref={`${icons}#${service.serviceIcon}`} />
             </svg>
             <h4 className="service__heading-4">{service.serviceTitle}</h4>

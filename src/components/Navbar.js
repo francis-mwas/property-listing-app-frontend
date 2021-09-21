@@ -15,27 +15,27 @@ function Navbar() {
       </div>
       <ul className="header__nav">
         <li className="header__item">
-          <Link to="#" className="header__nav--link header__nav--link-1">
+          <Link to="/" className="header__nav--link header__nav--link-1">
             Home
           </Link>
         </li>
         <li className="header__item">
-          <Link to="#" className="header__nav--link">
+          <Link to="/" className="header__nav--link">
             Services
           </Link>
         </li>
         <li className="header__item">
-          <Link href="#" className="header__nav--link">
+          <Link to="#" className="header__nav--link">
             Gallery
           </Link>
         </li>
         <li className="header__item">
-          <Link href="#" className="header__nav--link">
+          <Link to="#" className="header__nav--link">
             Testimonials
           </Link>
         </li>
         <li className="header__item">
-          <Link href="properties.html" className="header__nav--link">
+          <Link to="properties.html" className="header__nav--link">
             Properties
           </Link>
         </li>
