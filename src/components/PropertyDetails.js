@@ -17,7 +17,13 @@ function PropertyDetails({ propertiesIcons, property }) {
   const propertyIcon = propIcons.map((propertyIcon) => propertyIcon);
   const [icon_dollar, icon_expand, icon_shower, icon_bed, icon_location] =
     propertyIcon;
-
+  const amenities = otheAmenities.map((amenity, index) => (
+    <ul className="property-details__amenities-list">
+      <li key={index} className="property-details__amenities-list--item">
+        {amenity}
+      </li>
+    </ul>
+  ));
   return (
     <section className="property-details">
       <div className="property-details__content-details">
@@ -62,6 +68,7 @@ function PropertyDetails({ propertiesIcons, property }) {
         <h4 class="property-details__content-details--desc-title">
           Other Amenities
         </h4>
+        <div class="property-details__amenities">{amenities}</div>
       </div>
     </section>
   );
