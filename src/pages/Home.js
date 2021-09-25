@@ -4,10 +4,12 @@ import Banner from '../components/Banner';
 import BannerHero from '../components/BannerHero';
 import FeaturedProperties from '../components/FeaturedProperties';
 import Services from '../components/Services';
+import Navbar from '../components/Navbar';
 
 function Home() {
   return (
-    <>
+    <div className="container">
+      <Navbar />
       <Banner>
         <BannerHero
           title="Get affordable luxurious homes"
@@ -20,7 +22,7 @@ function Home() {
       </Banner>
       <Services />
       <FeaturedProperties />
-    </>
+    </div>
   );
 }
 

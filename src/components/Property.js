@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Property({ property }) {
-  const { images, propertyTitle, price, location, rooms, description } =
+  const { images, propertyTitle, price, location, rooms, description, slug } =
     property;
   return (
     <div className="apartment">
-      <Link to="/">
+      <Link to={`/properties/${slug}`}>
         <img src={images[0]} alt="Apartment 1" className="apartment__img" />
       </Link>
       <h4 className="apartment__title">{propertyTitle}</h4>

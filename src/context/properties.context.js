@@ -1,13 +1,15 @@
 import React, { createContext, useState, useEffect } from 'react';
-import items from '../data.js';
+import items, { propertyIcons } from '../data.js';
 
-export const PropertiesContext = createContext();
+const PropertiesContext = createContext();
 
-export function PropertiesContextProvider(props) {
+function PropertiesContextProvider(props) {
   const [properties, setProperties] = useState([]);
   const [featuredProperties, setFeaturedProperties] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [propertiesIcons, setPropertiesIcons] = useState([]);
 
+  // format contentful data into a simple format
   const formatData = (items) => {
     const dataItems = items.map((item) => {
       const id = item.sys.id;
@@ -17,8 +19,8 @@ export function PropertiesContextProvider(props) {
     });
     return dataItems;
   };
-
-  useEffect(() => {
+  // function to update the state
+  const getData = () => {
     const properties = formatData(items);
     const featuredProperties = properties.filter(
       (property) => property.featured === true
@@ -26,13 +28,42 @@ export function PropertiesContextProvider(props) {
     setProperties(properties);
     setFeaturedProperties(featuredProperties);
     setLoading(false);
-  }, [setProperties, setFeaturedProperties, setLoading]);
+  };
+
+  //get icons
+  const getIcons = () => {
+    const tempIcons = propertyIcons;
+    setPropertiesIcons(tempIcons);
+  };
+
+  // get single property based on the slug passed
+  const getSingleProperty = (slug) => {
+    let tempProperties = [...properties];
+
+    const newProperty = tempProperties.find(
+      (property) => property.slug === slug
+    );
+    return newProperty;
+  };
+
+  useEffect(() => {
+    getData();
+    getIcons();
+  }, []);
 
   return (
     <PropertiesContext.Provider
-      value={{ properties, featuredProperties, loading }}
+      value={{
+        properties,
+        featuredProperties,
+        loading,
+        getSingleProperty,
+        propertiesIcons,
+      }}
     >
       {props.children}
     </PropertiesContext.Provider>
   );
 }
+
+export { PropertiesContextProvider, PropertiesContext };

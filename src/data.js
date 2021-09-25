@@ -5,6 +5,9 @@ import img2 from './images/apart-6.jpg';
 import img4 from './images/apart-8.jpg';
 import img5 from './images/apart-9.jpg';
 import img6 from './images/apart-10.jpg';
+import img7 from './images/gallery/gal-4.jpg';
+import img8 from './images/gallery/gal-6.jpg';
+import img9 from './images/gallery/gal-5.jpg';
 
 const data = [
   {
@@ -15,7 +18,7 @@ const data = [
       propertyTitle: 'Laurel Hill Suites',
       slug: 'apartment-for-rent',
       location: 'Kilimani',
-      price: 100,
+      price: 34500,
       size: 200,
       rooms: 5,
       beds: 4,
@@ -54,6 +57,13 @@ const data = [
           fields: {
             file: {
               url: img3,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img2,
             },
           },
         },
@@ -76,11 +86,11 @@ const data = [
       propertyTitle: 'Denis Gardens',
       slug: 'house-for-sale',
       location: 'Ngong Road',
-      price: 100,
-      size: 200,
-      rooms: 5,
-      beds: 4,
-      bathRooms: 6,
+      price: 1000000,
+      size: 150,
+      rooms: 4,
+      beds: 3,
+      bathRooms: 2,
       featured: true,
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur.',
@@ -115,6 +125,13 @@ const data = [
           fields: {
             file: {
               url: img3,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img2,
             },
           },
         },
@@ -136,7 +153,7 @@ const data = [
       propertyTitle: 'Silverstone Kilimani',
       slug: 'land-for-sale',
       location: 'Ngong Road',
-      price: 100,
+      price: 46000000,
       size: 200,
       rooms: 5,
       beds: 4,
@@ -185,6 +202,13 @@ const data = [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img2,
+            },
+          },
+        },
       ],
     },
   },
@@ -196,11 +220,11 @@ const data = [
       propertyTitle: 'The Sun Apartments',
       slug: 'apartment-for-sale',
       location: 'Ngong Road',
-      price: 100,
+      price: 75000000,
       size: 200,
-      rooms: 5,
-      beds: 4,
-      bathRooms: 6,
+      rooms: 4,
+      beds: 3,
+      bathRooms: 2,
       featured: true,
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, obcaecati sint in illo enim doloribus maxime reprehenderit maiores iste explicabo, ea veniam est ut? Iste facere vel accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero est totam quis, obcaecati doloremque velit modi commodi labore itaque corporis! Quibusdam sapiente consequuntur repudiandae incidunt laudantium, sed doloremque consequatur.',
@@ -227,21 +251,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img2,
+              url: img6,
             },
           },
         },
         {
           fields: {
             file: {
-              url: img3,
+              url: img8,
             },
           },
         },
         {
           fields: {
             file: {
-              url: img2,
+              url: img9,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img7,
             },
           },
         },
@@ -256,7 +287,7 @@ const data = [
       propertyTitle: 'MagicDash Apartments',
       slug: 'office-space-for-rent',
       location: 'Ngong Road',
-      price: 100,
+      price: 55000,
       size: 200,
       rooms: 5,
       beds: 4,
@@ -305,6 +336,13 @@ const data = [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img2,
+            },
+          },
+        },
       ],
     },
   },
@@ -316,7 +354,7 @@ const data = [
       propertyTitle: 'Greenville Gardens',
       slug: 'apartment-for-sale',
       location: 'Ngong Road',
-      price: 100,
+      price: 85000000,
       size: 200,
       rooms: 5,
       beds: 4,
@@ -365,10 +403,80 @@ const data = [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img2,
+            },
+          },
+        },
       ],
     },
   },
 ];
+export const shareIcons = {
+  icons: [
+    {
+      id: uuid(),
+      shareIcon: 'icon-facebook2',
+      class: 'fb',
+    },
+    {
+      id: uuid(),
+      shareIcon: 'icon-instagram',
+      class: 'insta',
+    },
+    {
+      id: uuid(),
+      shareIcon: 'icon-whatsapp',
+      class: 'whatsapp',
+    },
+    {
+      id: uuid(),
+      shareIcon: 'icon-twitter',
+      class: 'twitter',
+    },
+    {
+      id: uuid(),
+      shareIcon: 'icon-linkedin',
+      class: 'linkedin',
+    },
+  ],
+};
+export const propertyIcons = {
+  propIcons: [
+    {
+      id: uuid(),
+      name: 'price',
+      icon_dollar: 'icon-coin-dollar',
+    },
+    {
+      id: uuid(),
+      name: 'size',
+      icon_expand: 'icon-expand',
+    },
+    {
+      id: uuid(),
+      name: 'rooms',
+      icon_shower: 'icon-shower',
+    },
+    {
+      id: uuid(),
+      name: 'beds',
+      icon_bed: 'icon-bed',
+    },
+    {
+      id: uuid(),
+      name: 'location',
+      icon_location: 'icon-location',
+    },
+    {
+      id: uuid(),
+      name: 'office',
+      icon_office: 'icon-office',
+    },
+  ],
+};
 
 export const serviceData = {
   services: [

@@ -100,14 +100,14 @@
 }
 
 //to be made dynamic
-.banner-listing {
-  background-image: url(../images/apart-8.jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: full-start / full-end;
+// .banner-listing {
+//   background-image: url(../images/apart-8.jpg);
+//   background-size: cover;
+//   background-position: center;
+//   grid-column: full-start / full-end;
 
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  align-items: center;
-}
+//   display: grid;
+//   grid-template-columns: repeat(10, 1fr);
+//   grid-template-rows: repeat(10, 1fr);
+//   align-items: center;
+// }
