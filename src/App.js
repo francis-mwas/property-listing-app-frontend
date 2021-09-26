@@ -1,16 +1,16 @@
 import { Route, Switch } from 'react-router';
 import './sass/main.scss';
-import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import SingleProperty from './pages/SingleProperty';
 
 function App() {
   return (
-    <div className="container">
-      <Navbar />
+    <>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/properties/:slug" component={SingleProperty} />
       </Switch>
-    </div>
+    </>
   );
 }
 

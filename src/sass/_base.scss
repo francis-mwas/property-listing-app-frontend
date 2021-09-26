@@ -91,3 +91,8 @@ body {
       [col-start]minmax(min-content, 14rem) [col-end]
     ) 1fr[center-end] 1fr [full-end];
 }
+.error {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
