@@ -25,7 +25,7 @@ function SingleProperty() {
       </div>
     );
   }
-  const { propertyTitle, price, location, images } = property;
+  const { propertyTitle, price, location, images, description } = property;
   const [mainImg] = images;
   console.log(images);
   return (
@@ -50,7 +50,7 @@ function SingleProperty() {
             <ShareIcons />
           </div>
         </div>
-        <PropertiesGallery images={images} />
+        <PropertiesGallery images={images} description={description} />
       </section>
       <PropertyDetails property={property} propertiesIcons={propertiesIcons} />
     </div>

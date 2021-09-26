@@ -1,4 +1,4 @@
-function PropertiesGallery({ images }) {
+function PropertiesGallery({ images, description }) {
   return (
     <div className="single-property-images__gallery">
       {images.map((image, index) => (
@@ -10,9 +10,9 @@ function PropertiesGallery({ images }) {
         >
           <img
             src={`${image}`}
-            alt="Property image one"
+            alt={description}
             class="single-property-images__img-item"
-          />        
+          />
         </figure>
       ))}
     </div>
