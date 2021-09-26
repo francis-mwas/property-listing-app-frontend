@@ -12,8 +12,7 @@ function PropertiesGallery({ images }) {
             src={`${image}`}
             alt="Property image one"
             class="single-property-images__img-item"
-            alt="Gal"
-          />
+          />        
         </figure>
       ))}
     </div>

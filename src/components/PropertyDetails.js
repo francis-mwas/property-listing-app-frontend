@@ -2,10 +2,8 @@ import icons from '../images/sprite.svg';
 
 function PropertyDetails({ propertiesIcons, property }) {
   const {
-    propertyTitle,
     price,
     location,
-    rooms,
     size,
     beds,
     bathRooms,

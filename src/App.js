@@ -1,6 +1,5 @@
 import { Route, Switch } from 'react-router';
 import './sass/main.scss';
-import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import SingleProperty from './pages/SingleProperty';
 
