@@ -12,7 +12,8 @@ import ShareIcons from '../components/ShareIcons';
 import LatestPropertiesListings from '../components/LatestPropertyListings';
 
 function SingleProperty() {
-  const { getSingleProperty, propertiesIcons } = useContext(PropertiesContext);
+  const { getSingleProperty, propertiesIcons, properties } =
+    useContext(PropertiesContext);
 
   let { slug } = useParams();
   const property = getSingleProperty(slug);
@@ -58,7 +59,10 @@ function SingleProperty() {
           property={property}
           propertiesIcons={propertiesIcons}
         />
-        <LatestPropertiesListings />
+        <LatestPropertiesListings
+          properties={properties}
+          propertiesIcons={propertiesIcons}
+        />
       </section>
     </div>
   );
