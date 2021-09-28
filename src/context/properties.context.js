@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useCallback } from 'react';
 import items, { propertyIcons } from '../data.js';
 
 const PropertiesContext = createContext();
@@ -10,7 +10,7 @@ function PropertiesContextProvider(props) {
   const [propertiesIcons, setPropertiesIcons] = useState([]);
 
   // format contentful data into a simple format
-  const formatData = (items) => {
+  const formatData = useCallback((items) => {
     const dataItems = items.map((item) => {
       const id = item.sys.id;
       const images = item.fields.images.map((image) => image.fields.file.url);
@@ -18,9 +18,9 @@ function PropertiesContextProvider(props) {
       return property;
     });
     return dataItems;
-  };
+  }, []);
   // function to update the state
-  const getData = () => {
+  const getData = useCallback(() => {
     const properties = formatData(items);
     const featuredProperties = properties.filter(
       (property) => property.featured === true
@@ -28,13 +28,13 @@ function PropertiesContextProvider(props) {
     setProperties(properties);
     setFeaturedProperties(featuredProperties);
     setLoading(false);
-  };
+  }, [formatData]);
 
   //get icons
-  const getIcons = () => {
+  const getIcons = useCallback(() => {
     const tempIcons = propertyIcons;
     setPropertiesIcons(tempIcons);
-  };
+  }, []);
 
   // get single property based on the slug passed
   const getSingleProperty = (slug) => {
@@ -49,7 +49,7 @@ function PropertiesContextProvider(props) {
   useEffect(() => {
     getData();
     getIcons();
-  }, []);
+  }, [getData, getIcons]);
 
   return (
     <PropertiesContext.Provider
