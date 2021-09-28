@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import BannerHero from '../components/BannerHero';
 import FeaturedProperties from '../components/FeaturedProperties';
 import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       </Banner>
       <Services />
       <FeaturedProperties />
+      <Testimonials />
     </>
   );
 }
