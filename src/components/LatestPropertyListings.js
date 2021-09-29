@@ -7,11 +7,10 @@ function LatestPropertiesListings({ properties, propertiesIcons }) {
 
   const propertyIcon = propIcons.map((propertyIcon) => propertyIcon);
 
-  console.log('Iconsss: ', propertyIcon);
   const propertyListing = properties.map((property) => (
     <div className="property-details__side-content" key={property.id}>
       <div className="property-details__side-image">
-        <Link to="/">
+        <Link to={`/properties/${property.slug}`}>
           <img
             src={property.images[0]}
             className="property-details__side-image--item"
