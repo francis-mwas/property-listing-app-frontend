@@ -7,11 +7,12 @@ function PropertiesGallery({ images, description }) {
             index + 1
           }`}
           id={index}
+          key={index}
         >
           <img
             src={`${image}`}
             alt={description}
-            class="single-property-images__img-item"
+            className="single-property-images__img-item"
           />
         </figure>
       ))}

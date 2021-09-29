@@ -6,15 +6,8 @@ function LatestPropertiesListings({ properties, propertiesIcons }) {
   const { propIcons } = propertiesIcons;
 
   const propertyIcon = propIcons.map((propertyIcon) => propertyIcon);
-  const [
-    icon_dollar,
-    icon_expand,
-    icon_shower,
-    icon_bed,
-    icon_location,
-    icon_office,
-  ] = propertyIcon;
 
+  console.log('Iconsss: ', propertyIcon);
   const propertyListing = properties.map((property) => (
     <div className="property-details__side-content" key={property.id}>
       <div className="property-details__side-image">
@@ -29,19 +22,19 @@ function LatestPropertiesListings({ properties, propertiesIcons }) {
       <div className="property-details__side--text-content">
         <h4 className="property-details__side--title">
           <svg className="property-details__side--icon">
-            <use xlinkHref={`${icons}#${icon_office.icon_office}`} />
+            <use xlinkHref={`${icons}#${propertyIcon[5].icon_office}`} />
           </svg>
           {property.propertyTitle.substring(0, 15)}..
         </h4>
         <h4 className="property-details__side--price">
           <svg className="property-details__side--icon">
-            <use xlinkHref={`${icons}#${icon_dollar.icon_dollar}`} />
+            <use xlinkHref={`${icons}#${propertyIcon[0].icon_dollar}`} />
           </svg>
           {property.price}
         </h4>
         <h4 className="property-details__side--location">
           <svg className="property-details__side--icon">
-            <use xlinkHref={`${icons}#${icon_location.icon_location}`} />
+            <use xlinkHref={`${icons}#${propertyIcon[4].icon_location}`} />
           </svg>
           {property.location}
         </h4>

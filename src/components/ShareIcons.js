@@ -7,7 +7,12 @@ function ShareIcons() {
   return (
     <div className="header__share--icons">
       {shareIcons.icons.map((icon) => (
-        <Link to="/" class="single-property-images__link-item" id={icon.id}>
+        <Link
+          to="/"
+          className="single-property-images__link-item"
+          id={icon.id}
+          key={icon.id}
+        >
           <svg
             className={`single-property-images__icons-link single-property-images__icons-link--${icon.class}`}
           >
