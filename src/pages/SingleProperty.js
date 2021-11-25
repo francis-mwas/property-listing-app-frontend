@@ -9,9 +9,11 @@ import PropertiesGallery from '../components/PropertiesGallery';
 import PropertyDetails from '../components/PropertyDetails';
 import HeaderTitle from '../components/HeaderTitle';
 import ShareIcons from '../components/ShareIcons';
+import LatestPropertiesListings from '../components/LatestPropertyListings';
 
 function SingleProperty() {
-  const { getSingleProperty, propertiesIcons } = useContext(PropertiesContext);
+  const { getSingleProperty, propertiesIcons, properties } =
+    useContext(PropertiesContext);
 
   let { slug } = useParams();
   const property = getSingleProperty(slug);
@@ -52,7 +54,16 @@ function SingleProperty() {
         </div>
         <PropertiesGallery images={images} description={description} />
       </section>
-      <PropertyDetails property={property} propertiesIcons={propertiesIcons} />
+      <section className="property-details">
+        <PropertyDetails
+          property={property}
+          propertiesIcons={propertiesIcons}
+        />
+        <LatestPropertiesListings
+          properties={properties}
+          propertiesIcons={propertiesIcons}
+        />
+      </section>
     </div>
   );
 }
