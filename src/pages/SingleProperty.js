@@ -10,6 +10,7 @@ import PropertyDetails from '../components/PropertyDetails';
 import HeaderTitle from '../components/HeaderTitle';
 import ShareIcons from '../components/ShareIcons';
 import LatestPropertiesListings from '../components/LatestPropertyListings';
+import Footer from '../components/Footer';
 
 function SingleProperty() {
   const { getSingleProperty, propertiesIcons, properties } =
@@ -64,6 +65,7 @@ function SingleProperty() {
           propertiesIcons={propertiesIcons}
         />
       </section>
+      <Footer />
     </div>
   );
 }

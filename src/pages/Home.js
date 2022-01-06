@@ -5,6 +5,8 @@ import BannerHero from '../components/BannerHero';
 import FeaturedProperties from '../components/FeaturedProperties';
 import Services from '../components/Services';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Testmonial from '../components/Testmonial';
 
 function Home() {
   return (
@@ -22,6 +24,8 @@ function Home() {
       </Banner>
       <Services />
       <FeaturedProperties />
+      <Testmonial />
+      <Footer />
     </div>
   );
 }
