@@ -8,6 +8,10 @@ import img6 from './images/apart-10.jpg';
 import img7 from './images/gallery/gal-4.jpg';
 import img8 from './images/gallery/gal-6.jpg';
 import img9 from './images/gallery/gal-5.jpg';
+import test1 from './images/user-2.jpg'
+import test2 from './images/user-3.jpg'
+import test3 from './images/user-4.jpg'
+import test4 from './images/user-6.jpg'
 
 const data = [
   {
@@ -410,6 +414,7 @@ const data = [
             },
           },
         },
+        
       ],
     },
   },
@@ -419,27 +424,63 @@ export const shareIcons = {
     {
       id: uuid(),
       shareIcon: 'icon-facebook2',
+      linkIcon: 'https://facebook.com',
       class: 'fb',
     },
     {
       id: uuid(),
       shareIcon: 'icon-instagram',
+      linkIcon: 'https://instagram.com',
       class: 'insta',
     },
     {
       id: uuid(),
       shareIcon: 'icon-whatsapp',
+      linkIcon: 'https://whatsapp.com',
       class: 'whatsapp',
     },
     {
       id: uuid(),
       shareIcon: 'icon-twitter',
+      linkIcon: 'https://twitter.com',
       class: 'twitter',
     },
     {
       id: uuid(),
       shareIcon: 'icon-linkedin',
+      linkIcon: 'https://linkedin.com',
       class: 'linkedin',
+    },
+  ],
+};
+export const footerLinks = {
+  links: [
+   {
+        id: uuid(),
+        title: "Home",
+        footerLink: "home"
+
+    },
+     {
+        id: uuid(),
+        title: "About",
+        footerLink: "about"
+
+    },
+     {
+        id: uuid(),
+        title: "Our Services",
+        footerLink: "services"
+    },
+     {
+        id: uuid(),
+        title: "Testimonies",
+        footerLink: "testmonies"
+    },
+     {
+        id: uuid(),
+        title: "Gallery",
+        footerLink: "gallery"
     },
   ],
 };
@@ -511,4 +552,40 @@ export const serviceData = {
   ],
 };
 
+export const testmonialData = {
+  testmonials: [
+    {
+      id: uuid(),
+      testmonialImage: test1,
+      testmonialTitle: 'Elizabeth Mwania',
+      testmonialIcon: 'icon-quotes-left',
+      testmonialDetails:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero praesentium. Eveniet temporibus nisi, sapiente sit placeat ullam repellat alias soluta iste.',
+    },
+     {
+      id: uuid(),
+      testmonialImage: test2,
+      testmonialTitle: 'Francis Mwangi',
+      testmonialIcon: 'icon-quotes-left',
+      testmonialDetails:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero praesentium. Eveniet temporibus nisi, sapiente sit placeat ullam repellat alias soluta iste.',
+    },
+     {
+      id: uuid(),
+      testmonialImage: test3,
+      testmonialTitle: 'John Doe',
+      testmonialIcon: 'icon-quotes-left',
+      testmonialDetails:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero praesentium. Eveniet temporibus nisi, sapiente sit placeat ullam repellat alias soluta iste.',
+    },
+     {
+      id: uuid(),
+      testmonialImage: test4,
+      testmonialTitle: 'Mariga Elvis',
+      testmonialIcon: 'icon-quotes-left',
+      testmonialDetails:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero praesentium. Eveniet temporibus nisi, sapiente sit placeat ullam repellat alias soluta iste.',
+    },
+  ],
+};
 export default data;

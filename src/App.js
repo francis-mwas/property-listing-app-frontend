@@ -3,6 +3,7 @@ import './sass/main.scss';
 import Home from './pages/Home';
 import SingleProperty from './pages/SingleProperty';
 
+
 function App() {
   return (
     <>
